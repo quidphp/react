@@ -1,4 +1,8 @@
 // layout
-@import '../app.scss';
 
+// import
+@import '../app.scss';
+@import "~quidphp-navigation/css/document.scss";
+
+// document
 @include Document($focus: $color);
