@@ -1,0 +1,21 @@
+{
+    "name": "quidphp-react",
+    "private": true,
+    "scripts": {
+        "dev": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot --https",
+        "prod": "mix --production"
+    },
+    "dependencies": {
+        "quidphp-navigation": "5.31.*"
+    },
+    "devDependencies": {
+        "laravel-mix": "^6.0.43",
+        "laravel-mix-polyfill": "^3.0.1",
+        "sass": "^1.52.0",
+        "sass-loader": "^10.2.1",
+        "sass-resources-loader": "^2.2.5"
+    }
+}

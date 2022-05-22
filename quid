@@ -1,0 +1,37 @@
+<?php
+declare(strict_types=1);
+// file for booting the application and Cms via CLI
+
+(function() {
+    $argv = $_SERVER['argv'] ?? null;
+
+    if(!empty($argv))
+    {
+        $config = require __DIR__.'/env.php';
+        $arg = explode(':',$argv[1] ?? '/');
+        $envType = $arg[1] ?? $config['cliEnvType'] ?? null;
+    }
+
+    if(!empty($envType))
+    {
+        $xEnvType = explode('/',$envType);
+        if(count($xEnvType) === 2)[$env,$type] = $xEnvType;
+    }
+
+    if(!empty($env) && !empty($type) && !empty($config['schemeHost'][$envType]))
+    {
+        $vendor = $config['@'.$type]['path']['vendor'] ?? $config['@'.$env]['path']['vendor'] ?? $config['path']['vendor'] ?? null;
+        $boot = $config['@'.$type]['path']['boot'] ?? $config['@'.$env]['path']['boot'] ?? $config['path']['boot'] ?? null;
+    }
+
+    if(!empty($vendor) && !empty($boot))
+    {
+        $boot = str_replace('[vendor]',$vendor,$boot);
+        require_once $vendor.'/autoload.php';
+        $config['request']['path'] = $arg[0];
+        $config['request']['schemeHost'] = $config['schemeHost'][$envType];
+        $config['request']['argv'] = $argv;
+        (require $boot)($config);
+    }
+})();
+?>

@@ -1,0 +1,20 @@
+{
+    "name": "quidphp/react",
+    "type": "project",
+    "description": "Create a new project using QuidPHP, LemurCMS and React",
+    "keywords": ["quidphp","quid","lemur","lemur cms","framework","cms","react"],
+    "homepage": "https://quidphp.com",
+    "license": "MIT",
+    "authors": [{
+        "name": "Pierre-Philippe Emond",
+        "email": "emondpph@gmail.com",
+        "homepage": "https://emond.io",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": ">=8.1.0",
+        "quidphp/site": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
