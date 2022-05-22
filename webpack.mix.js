@@ -1,7 +1,8 @@
 const mix = require('laravel-mix');
 require('laravel-mix-polyfill');
 
-mix.js('react/app.js', 'public/js/app.js');
+mix.js('react/index.js', 'public/js/app.js');
+mix.react({ extractStyles: 'public/css/app.css'});
 mix.extract(['quidphp-navigation','quidphp-browser','quidphp-javascript'], 'public/js/app-vendor.js');
 
 if(mix.inProduction())
