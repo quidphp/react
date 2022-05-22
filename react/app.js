@@ -1,8 +1,8 @@
 // app
 
 // import
-import Layout from './component/Layout';
-import './app.scss';
+import Layout from '*/interface/Layout';
+import '*/app.scss';
 
 // export
 export default function() {

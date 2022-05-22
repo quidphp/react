@@ -1,7 +1,7 @@
 // helloWorld
 
 // import
-import './HelloWorld.scss';
+import '*/component/HelloWorld.scss';
 
 // export
 export default () => (

@@ -1,8 +1,8 @@
 // import
 import React from "react";
 import { createRoot } from 'react-dom/client';
-import "./global.js";
-import App from "./app.js";
+import "*/global.js";
+import App from "*/app.js";
 
 // navigation
 Quid.Component.Doc.call(document, { routeWrap: '> #app', contentType: 'json', attrTriggered: null });
