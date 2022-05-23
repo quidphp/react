@@ -2,7 +2,7 @@
 
 // import
 import HelloWorld from '@/component/HelloWorld';
-import '@/interface/Layout.scss';
+import './Layout.scss';
 
 // export
 export default function() {
