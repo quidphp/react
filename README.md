@@ -134,10 +134,10 @@ Once you are logged in, you will be able to change the password for the user and
 - [app/global.js](app/global.js) - Script which declares some global variables
 - [app/index.js](app/index.js) - Entry file for the react application
 - [app/component/HelloWorld.jsx](app/component/HelloWorld.jsx) - Component for a hello world in a h1 tag
-- [app/interface/Layout.jsx](app/component/Layout.jsx) - Component for the common page layout
-- [app/interface/Layout.scss](app/component/Layout.scss) - Stylesheet for the common page layout
-- [app/route/Error.jsx](app/component/Error.jsx) - Component for the error route
-- [app/route/Home.jsx](app/component/Home.jsx) - Component for the home route
+- [app/interface/Layout.jsx](app/interface/Layout.jsx) - Component for the common page layout
+- [app/interface/Layout.scss](app/interface/Layout.scss) - Stylesheet for the common page layout
+- [app/route/Error.jsx](app/route/Error.jsx) - Component for the error route
+- [app/route/Home.jsx](app/route/Home.jsx) - Component for the home route
 
 ## Known issues
 - Some errors appear in the console related to the Hot Module Reload (HMR)
