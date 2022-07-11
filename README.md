@@ -128,7 +128,7 @@ Once you are logged in, you will be able to change the password for the user and
 - [src/App/Error.php](src/App/Error.php) - Class for the error route of the app
 - [src/App/Home.php](src/App/Home.php) - Class for the home route of the app
 - [src/Row/User.php](src/Row/User.php) - Class for a row of the user table
-- [src/Service/React.php](src/Service/React.php) - Class related to vue and the loading of front-end assets
+- [src/Service/React.php](src/Service/React.php) - Class related to React and the loading of front-end assets
 - [app/app.jsx](app/app.jsx) - Root component which loads the correct route
 - [app/app.scss](app/app.scss) - Main scss stylesheet for the app
 - [app/global.js](app/global.js) - Script which declares some global variables
