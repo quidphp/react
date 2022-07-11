@@ -107,7 +107,7 @@ Once you open the CMS within your browser, you will need to login. The default u
 Once you are logged in, you will be able to change the password for the user and create new users.
 
 ## Overview
-**QuidPHP/Project** contains 30 files. Here is an overview:
+**QuidPHP/Project** contains 31 files. Here is an overview:
 - [.gitignore](.gitignore) - Standard .gitignore file for the project
 - [composer.json](composer.json) - File declaring all Composer PHP dependencies
 - [db.sql](db.sql) - Minimal database structure required
@@ -134,13 +134,13 @@ Once you are logged in, you will be able to change the password for the user and
 - [app/global.js](app/global.js) - Script which declares some global variables
 - [app/index.js](app/index.js) - Entry file for the react application
 - [app/component/HelloWorld.jsx](app/component/HelloWorld.jsx) - Component for a hello world in a h1 tag
+- [app/component/HelloWorld.module.scss](app/component/HelloWorld.module.scss) - SCSS module file for the hello world component
 - [app/interface/Layout.jsx](app/interface/Layout.jsx) - Component for the common page layout
 - [app/interface/Layout.scss](app/interface/Layout.scss) - Stylesheet for the common page layout
 - [app/route/Error.jsx](app/route/Error.jsx) - Component for the error route
 - [app/route/Home.jsx](app/route/Home.jsx) - Component for the home route
 
 ## Known issues
-- Some errors appear in the console related to the Hot Module Reload (HMR)
 - On Windows, there are some problems related to creating symlinks.
 - On Windows, you will need to add *lower_case_table_names* = 2 in your database configuration file (my.cnf). The table and column names need to be stored in their natural case.
 

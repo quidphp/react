@@ -1,0 +1,9 @@
+// helloWorld
+// SCSS module file for the hello world component
+
+// import
+@import '@/app.scss';
+
+.h1 {
+  color: $color;
+}

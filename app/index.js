@@ -24,15 +24,8 @@ else
 
     // render
     root = createRoot(rootNode); 
-    root.render(<App />);
+    root.render(<App initialState={initialState} />);
     Quid.Ele.setData(rootNode,"react-root",root);
-    
-    // mutate store
-    Quid.Shortcut.ael(document, 'doc:initAjax', function () {
-        
-    });
-    Quid.Shortcut.ael(document, 'doc:makeJsonResponse', function (event, json) {
-    });
 }
 
 // fix for hot
