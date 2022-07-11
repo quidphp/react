@@ -7,7 +7,7 @@ use Quid\Main;
 use Quid\Routing;
 
 // react
-// classe en lien avec react et les chargements des assets front-end
+// class related to react and the loading of front-end assets
 class React extends Main\Service
 {
     // trait

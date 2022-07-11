@@ -1,6 +1,9 @@
+// index
+// entry file for the react application
+
 // import
 import React from "react";
-import { createRoot, hydrateRoot } from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import App from './app';
 import './global';
 const rootNode = document.getElementById("app");

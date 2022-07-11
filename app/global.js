@@ -1,4 +1,7 @@
 // global
+// script which declares some global variables
+
+// global
 import * as Quid from 'quidphp-navigation';
 
 // global

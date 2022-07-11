@@ -5,13 +5,13 @@ use Quid\Base;
 use Quid\Base\Html;
 
 // _template
-// trait utilisé par toutes les routes qui génère une interface (donc pas de formulaire), génère toute l'exportation de tableau de base
+// trait used by all routes which generate an interface
 trait _template
 {
     // config
     protected static array $configTemplate = [
         'vue'=>null,
-        'debugVue'=>true,
+        'debugJs'=>false,
         'debugPhp'=>false
     ];
 
@@ -79,7 +79,7 @@ trait _template
             'version'=>$boot->version(true,false),
             'type'=>$boot->type(),
             'timestamp'=>Base\Datetime::now(),
-            'debug'=>$this->shouldDebug('vue'),
+            'debug'=>$this->shouldDebug('js'),
             'navigation'=>static::allowNavigation(),
             'route'=>$this->outputJson()
         ];

@@ -1,37 +1,7 @@
 // helloWorld
-
-// import
-import styled from 'styled-components';
-import { useState } from 'react'
-const color = 'green';
+// component for a hello world in a h1 tag
 
 // export
-export default () => {
-    const [test, setTest] = useState('');
-    
-    const onClickHandler = () => {
-        d('click');
-    }
-    
-    const onChangeHandler = (event) => {
-        d('change');
-        setTest(event.target.value);
-    }
-    
-    return (
-    <>
-        <H1Styled>Hello World</H1Styled>
-        <input type='text' value={test} onChange={onChangeHandler} onClick={onClickHandler} />
-    </>
-    );
-};
-
-// style
-const H1Styled = styled.h1`
-  color: ${color};
-  text-decoration: underline;
-  
-  &:hover {
-      color: red;
-  }
-`;
+export default function HelloWorld() {
+    return <h1>Hello World</h1>;
+}
