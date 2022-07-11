@@ -6,7 +6,7 @@
 [![Code Size](https://img.shields.io/github/languages/code-size/quidphp/react)](https://github.com/quidphp/react)
 
 ## About
-**QuidPHP/React** repository contains the necessary structure to create a new project using QuidPHP, LemurCMS and ReactJs.
+**QuidPHP/React** repository contains the necessary structure to create a new project using QuidPHP, LemurCMS and React.
 
 ## License
 **QuidPHP/React** is available as an open-source software under the [MIT license](LICENSE).
