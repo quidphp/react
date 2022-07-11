@@ -15,16 +15,25 @@ const Routes = {
 
 // export
 export default function App({ initialState }) {
+    if (initialState.debug === true) {
+        Quid.Shortcut.d(initialState);
+    }
+        
     const [isLoading, setLoading] = useState(false);
     const [routeState, setRouteState] = useState(initialState);
-    const RouteName = Quid.Str.typecheck(routeState.route.component,true);
+    const RouteName = Quid.Str.typecheck(routeState.route.component, true);
     const RouteComponent = Quid.Func.typecheck(Routes[RouteName]);
 
     useEffect(() => {
         const initAjax = () => { setLoading(true); };
         const onResponse = (event, json) => {
-            Quid.Pojo.typecheck(json,true);
-            const newState = { ... initialState };
+            Quid.Pojo.typecheck(json, true);
+
+            if (initialState.debug === true) {
+                Quid.Shortcut.d({ ...json });
+            }
+                
+            const newState = { ...initialState };
             newState.route = json;
             setRouteState(newState);
         }
@@ -36,7 +45,7 @@ export default function App({ initialState }) {
             Quid.Shortcut.rel(document, 'doc:initAjax', initAjax);
             Quid.Shortcut.rel(document, 'doc:makeJsonResponse', onResponse);
         }
-    },[]);
+    }, []);
 
     return <RouteComponent data={routeState} />;
 }
